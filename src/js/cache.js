@@ -39,12 +39,6 @@ class Cache {
   }
 
   addEntity(key, value) {
-    if(this.map[key]) {
-      console.log('The entity is already exist in the cache, updating the value for it');
-      this.map[key].value = value;
-      return;
-    }
-
     if(this.length >= this.maxLength) {
       console.log('length is getting larger that max lenght, removing one from tail');
       this.removeFromTail();
