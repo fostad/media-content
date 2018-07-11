@@ -12,3 +12,9 @@ Example: http://localhost:3000/trailers?link=https://content.viaplay.se/pc-se/fi
 
 ## Run test cases
 Run: "npm run test"
+
+## Things to be improved in the future
+1. Proper logger
+2. Encode url in the request
+3. Authentication
+4. Write policy for the cache, not implemented now since only GET request is supported now
