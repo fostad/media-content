@@ -3,7 +3,7 @@ require('babel-register')({
 });
 
 const chai = require('chai');
-const Cache = require('../js/cache');
+const Cache = require('../js/cache/lru-cache');
 
 const expect = chai.expect;
 

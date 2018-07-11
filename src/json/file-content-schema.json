@@ -1,0 +1,43 @@
+{
+  "id": "/content",
+  "type": "object",
+  "properties": {
+    "_embedded": {
+      "type": "object",
+      "properties": {
+        "viaplay:blocks": {
+          "type": "array",
+          "items": [{
+            "type": "object",
+            "properties": {
+              "embeded": {
+                "type": "object",
+                "properties": {
+                  "viaplay:product": {
+                    "type": "object",
+                    "properties": {
+                      "content": {
+                        "type": "object",
+                        "properties": {
+                          "imdb": {
+                            "type": "object"
+                          },
+                          "required": ["imdb"]
+                        }
+                      },
+                      "required": ["content"]
+                    }
+                  },
+                  "required": ["viaplay:product"]
+                }
+              },
+              "required": ["embedded"]
+            }
+          }]
+        },
+        "required": ["viaplay:blocks"]
+      }
+    },
+    "required": ["_embedded"]
+  }
+}

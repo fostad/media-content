@@ -98,5 +98,12 @@ class Cache {
     value = null;
     return this.map[key];
   }
+
+  clear() {
+    this.map = {};
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
 }
 module.exports = Cache;
